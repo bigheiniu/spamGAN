@@ -5,17 +5,17 @@ import tensorflow
 
 n_aspect = 3
 
-gen_test = True # Whether training or testing the generator perplexity
+gen_test = False # Whether training or testing the generator perplexity
 
-clas_test = True # Whether training or testing the classifier test performance
-clas_test_ckpt = '/drive/My\ Drive/experiment/new/ckpt-bestclas' # Which checkpoint to use for classifier testing
+clas_test = False # Whether training or testing the classifier test performance
+clas_test_ckpt = '/content/drive/My\ Drive/experiment/new/ckpt-bestclas' # Which checkpoint to use for classifier testing
 clas_pred_output = "./clf_pre_result" # Where to save classifier test predictions
 
 # Saving/logging Config
 restore_model= False # Whether to reinitialize or restore weights
 clear_run_logs = False # Whether to delete prior run logs
-log_dir= '/drive/My Drive/experiment/' # Where to store logs
-checkpoint_dir= '/drive/My Drive/experiment/new/' # Where to store ckpt files
+log_dir= '/content/drive/My Drive/experiment/' # Where to store logs
+checkpoint_dir= '/content/drive/My Drive/experiment/new/' # Where to store ckpt files
 load_checkpoint_file = None # Which checkpoint to load
 
 # Logging frequency/verbosity

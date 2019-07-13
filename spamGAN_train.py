@@ -1398,7 +1398,7 @@ def main(config = None):
         checkpoint = tf.train.Saver(var_list=tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES, scope='gen_mle'))
         # if config.restore_model:
         if True:
-            checkpoint.restore(sess, "./model/tmp/ckpt-all-base")
+            checkpoint.restore(sess, "/content/drive/My\ Drive/experiment/ckpt-all-base")
             logger.info("Checkpoint restored from {}".format(checkpoint_file))
 
         if config.clear_run_logs:
